@@ -1,18 +1,414 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Pet Store</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Pet Store</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="css/styles.css">
+	<body>
+		<!-- TODO Check icons hover  -->
+
+		<header>
+			<div class="header-top">
+				<form action="" class="search">
+					<input class="search-input" type="text" placeholder="Pesquisar..." />
+					<a href="">
+						<img src="./assets/icons/lupa.png" />
+					</a>
+				</form>
+				<div class="align-top">
+					<a class="header-top-link" href="">
+						<img src="./assets/images/logo.png" />
+					</a>
+					<div class="icons-right">
+						<a href="#">
+							<img src="./assets/icons/login.png" />
+						</a>
+						<div class="wrapper-cart">
+							<a href="">
+								<img src="./assets/icons/carrinho.png" />
+								<div class="cart-itens-count"><span>99</span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper-mobile-menu-icon">
+				<img src="./assets/icons/icon-logo.png" alt="" />
+				<img
+					class="mobile-menu-icon"
+					src="./assets/icons/ver mais.png"
+					alt=""
+				/>
+			</div>
+			<nav class="menu-container">
+				<ul class="menu">
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria </a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria lorem </a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria lorem</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href=""> ipsum</a>
+					</li>
+					<li class="menu-item">
+						<a class="menu-link" href="">categoria ipsum</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="carousel">
+				<img class="banner" src="./assets/images/banner-full.png" />
+				<div class="wrapper-arrow">
+					<div class="container-arrows">
+						<svg
+							class="arrow arrow-left"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="44px"
+							height="81px"
+						>
+							<path
+								fill-rule="evenodd"
+								fill="currentColor"
+								d="M0.662,38.869 L39.092,0.643 C39.997,-0.257 41.448,-0.257 42.353,0.643 C43.258,1.544 43.258,2.986 42.353,3.887 L5.562,40.482 L42.353,77.078 C43.258,77.978 43.258,79.421 42.353,80.321 C41.909,80.763 41.312,81.000 40.731,81.000 C40.151,81.000 39.553,80.779 39.110,80.321 L0.678,42.096 C-0.226,41.212 -0.226,39.752 0.662,38.869 L0.662,38.869 Z"
+							/>
+						</svg>
+						<svg
+							class="arrow arrow-right"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							width="44px"
+							height="81px"
+						>
+							<path
+								fill-rule="evenodd"
+								fill="currentColor"
+								d="M0.662,38.869 L39.092,0.643 C39.997,-0.257 41.448,-0.257 42.353,0.643 C43.258,1.544 43.258,2.986 42.353,3.887 L5.562,40.482 L42.353,77.078 C43.258,77.978 43.258,79.421 42.353,80.321 C41.909,80.763 41.312,81.000 40.731,81.000 C40.151,81.000 39.553,80.779 39.110,80.321 L0.678,42.096 C-0.226,41.212 -0.226,39.752 0.662,38.869 L0.662,38.869 Z"
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="category">
+					<a href="">
+						<img src="./assets/images/category/01.png" srcset="" />
+					</a>
+					<a href="">
+						<img src="./assets/images/category/02.png" srcset="" />
+					</a>
+					<a href="">
+						<img src="./assets/images/category/03.png" srcset="" />
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<section class="container">
+			<h2 class="title">novidades</h2>
+			<ul class="list-products">
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/01.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/02.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag"> 50% off</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/03.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/04.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag">novo</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+			</ul>
+		</section>
+		<div class="category">
+			<a href="">
+				<img src="./assets/images/category/cats.png" srcset="" />
+			</a>
+			<a href="">
+				<img src="./assets/images/category/dogs.png" srcset="" />
+			</a>
+		</div>
+		<section class="container">
+			<h2 class="title">destaques</h2>
+			<ul class="list-products">
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/01.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/02.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag"> 50% off</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/03.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/04.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag">novo</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/01.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/02.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag"> 50% off</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/03.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+				</li>
+				<li class="item-product">
+					<div class="wrapper-product-image">
+						<img src="./assets/images/products/04.png" />
+						<div class="wrapper-product-button">
+							<button class="button-product-buy">compra rápida</button>
+						</div>
+						<span class="product-tag">novo</span>
+					</div>
+					<h3 class="product-name">lorem ipsum dolor summit</h3>
+					<div class="product-price">
+						<p class="product-price_disabled">R$ 99,99</p>
+						<p class="procuct-price_active">R$ 99,99</p>
+					</div>
+					<p class="product-price_installment">99x de R$ 99,99</p>
+				</li>
+			</ul>
+		</section>
+		<section class="container-newsletter">
+			<ul class="newsletter-benefits">
+				<li>
+					<img src="./assets/icons/icon-logo.png" />
+					<span><b>entrega gratuita</b> a partir de R$ 99</span>
+				</li>
+				<li>
+					<img src="./assets/icons/icon-logo.png" />
+					<span> <b>parcelamos</b> sem juros</span>
+				</li>
+				<li>
+					<img src="./assets/icons/icon-logo.png" />
+					<span><b>cadastre-se</b> e ganhe descontos</span>
+				</li>
+			</ul>
+			<h2 class="newsletter-title">assine nossa newsletter</h2>
+			<h3 class="newsletter-subtitle">
+				Cadastre-se para receber nossas novidades e descontos exclusivos!
+			</h3>
+			<form class="newsletter-form" action="#">
+				<input
+					class="input form-input-name"
+					type="text"
+					placeholder="Nome"
+					name=""
+					id=""
+				/>
+				<input
+					class="input form-input-email"
+					type="text"
+					placeholder="E-mail"
+					name=""
+					id=""
+				/>
+
+				<button class="newsletter-form-button">Enviar</button>
+			</form>
+		</section>
+		<footer class="footer">
+			<div class="top-footer">
+				<div class="socials">
+					<a href="">
+						<img src="./assets/images/logo.png" />
+					</a>
+					<ul class="wrapper-socials-icons">
+						<li>
+							<img src="./assets/icons/socials/facebook.png" />
+						</li>
+						<li>
+							<img src="./assets/icons/socials/instagram.png" />
+						</li>
+						<li>
+							<img src="./assets/icons/socials/twitter.png" />
+						</li>
+					</ul>
+					<p>© 2019 • CNPJ 00.000.000/0000-00</p>
+					<p>Rua Tal de Tal, 123 - Cidade, Estado</p>
+				</div>
+				<nav class="footer-nav">
+					<h3>pet store</h3>
+					<ul>
+						<li><a href="">Quem Somos</a></li>
+						<li><a href="">Como Comprar</a></li>
+						<li><a href="">Trocas e Devoluções</a></li>
+						<li><a href="">Frete e Entregas</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">
+					<h3>contato</h3>
+					<a href="tel:+9999-9999">
+						<p>(99)9999-9999</p>
+					</a>
+					<a href="tel:+9999-9999">
+						<p>(99)9999-9999</p>
+					</a>
+
+					<a href="mailto:petstore@petstore.com.br">
+						<p>petstore@petstore.com.br</p>
+					</a>
+				</div>
+				<div class="card-flags">
+					<h3>pagamento</h3>
+					<ul>
+						<li><img src="./assets/images/flags/visa.png" /></li>
+						<li><img src="./assets/images/flags/mastercard.png" /></li>
+						<li><img src="./assets/images/flags/american.png" /></li>
+						<li><img src="./assets/images/flags/dinersclub.png" /></li>
+					</ul>
+					<ul>
+						<li>
+							<img src="./assets/images/flags/hipercard.png" />
+						</li>
+						<li><img src="./assets/images/flags/aura.png" /></li>
+						<li><img src="./assets/images/flags/elo.png" /></li>
+						<li><img src="./assets/images/flags/boleto.png" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<p>tecnologia e desenvolvimento:</p>
+				<a class="serie-link" href="https://seriedesign.com.br/">
+					<img src="./assets/images/logo-seri.e.png" />
+				</a>
+			</div>
+		</footer>
+		<div class="float-buttons">
+			<img src="./assets/icons/seta.png" alt="" />
+			<img src="./assets/icons/whats-app.png" alt="" />
+		</div>
+	</body>
 	<script src="js/script.js" type="text/javascript"></script>
-</head>
-
-<body>
-
-
-
+</html>
